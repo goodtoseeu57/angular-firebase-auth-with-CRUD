@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Edit your Product</h2>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="productForm" fxLayout="column" fxLayoutGap="20px">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="description">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="imageUrl">
+    </mat-form-field>
+    <img [src]="data.imageUrl">
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="editProduct()">Update</button>
+</mat-dialog-actions>
+

@@ -1,0 +1,8 @@
+<div *ngIf="loadingSpinner" class="loading-spinner" fxLayout="row" fxLayoutAlign="center center">
+  <mat-spinner diameter="70"></mat-spinner>
+</div>
+<div class="products-cards">
+  <div *ngFor="let product of products" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <product-item (editProductEvent)="editProduct($event)" (deleteProductEvent)="deleteProduct($event)" [product]="product"></product-item>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.products-cards {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.loading-spinner {
+  height: 50vh;
+}

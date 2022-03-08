@@ -1,0 +1,18 @@
+<div class="form-container" fxLayout="column" fxLayoutAlign="center center">
+  <form [formGroup]="productForm" fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput>
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label> image url</mat-label>
+      <input matInput formControlName="imageUrl">
+    </mat-form-field>
+    <button mat-stroked-button (click)="createProduct()"> Create new product</button>
+  </form>
+</div>

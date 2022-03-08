@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ product.name }} </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="product.imageUrl" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{ product.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="editProduct()">
+      <mat-icon>edit</mat-icon>
+      Edit
+    </button>
+
+    <button mat-button (click)="deleteProduct()">
+      <mat-icon>delete_forever</mat-icon>
+      Delete
+    </button>
+  </mat-card-actions>
+</mat-card>
+

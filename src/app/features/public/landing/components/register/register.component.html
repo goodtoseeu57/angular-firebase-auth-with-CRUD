@@ -1,0 +1,14 @@
+<form [formGroup]="registerForm" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="email">
+    <mat-hint>Required</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" placeholder="Placeholder" formControlName="password">
+    <mat-hint>Password should be at least 8 characters and contain at least one number</mat-hint>
+  </mat-form-field>
+  <button mat-stroked-button (click)="register()"> Register</button>
+</form>
+

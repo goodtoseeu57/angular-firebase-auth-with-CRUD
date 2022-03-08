@@ -1,0 +1,4 @@
+<button mat-button class="email" [matMenuTriggerFor]="menu"> {{ userEmail }} </button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="signOut()">Sign out</button>
+</mat-menu>
